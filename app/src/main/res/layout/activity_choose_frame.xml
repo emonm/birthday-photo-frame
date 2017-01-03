@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+android:layout_weight="1"
+    tools:context=".ChooseFrameActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="#3b454f"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:text="CHOOSE FRAME" />
+
+
+    <GridView
+        android:layout_gravity="center"
+        android:background="#fff"
+        android:padding="4dp"
+        android:layout_weight="1"
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btnfooter"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        android:text="Birthday Photo Frame"
+        android:visibility="visible" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+</RelativeLayout>
+</LinearLayout>

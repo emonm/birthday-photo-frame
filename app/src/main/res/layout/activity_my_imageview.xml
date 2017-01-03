@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="#3b454f"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:text="MY WORK" />
+
+
+
+
+
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:padding="10dp"
+    android:background="#d7d7d7"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:numColumns="auto_fit"
+    android:stretchMode="columnWidth"></GridView>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+</LinearLayout>

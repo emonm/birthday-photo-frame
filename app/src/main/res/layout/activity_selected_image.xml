@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.galleon.photoframe.SelectedImageActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/rr_1"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:id="@+id/iv_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+
+                    android:scaleType="matrix" />
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/main_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY" />
+
+
+
+</RelativeLayout>

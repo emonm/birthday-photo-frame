@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!-- The application name. Defaults to name specified for the application label -->
+<string name="ga_appName">Birthday Photo Frame</string>
+
+<!-- The application version. Defaults to android:versionName specified in the AndroidManifest.xml -->
+<string name="ga_appVersion">1.0</string>
+
+<!-- This will End current session if app sleeps for a period of time -->
+<integer name="ga_sessionTimeout">300</integer>
+
+<!-- This will Enable automatic Activity measurement -->
+<bool name="ga_autoActivityTracking">true</bool>
+
+<!-- The property id associated with this analytics tracker -->
+<string name="ga_trackingId">UA-74071111-1</string>
+
+
+<!-- This will Enable reporting exceptions -->
+<bool name="ga_reportUncaughtExceptions">true</bool>
+
+
+
+</resources>

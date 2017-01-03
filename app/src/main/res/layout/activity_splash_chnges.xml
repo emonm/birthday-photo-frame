@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    tools:context=".SplashActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:background="#A4A4A4">
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            ads:cardCornerRadius="0dp"
+            ads:cardElevation="0sp"
+            ads:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.creativeitem.newyear.photoframe.custom.ClickableViewPager
+                    android:id="@+id/mainFragmentViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="0dp" />
+
+                <com.creativeitem.newyear.photoframe.circleindicator.CirclePageIndicator
+                    android:id="@+id/mainFragmentViewPagerBullets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#80000000"
+                    android:padding="6dp" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#eeeded"
+        android:orientation="vertical">
+
+
+        <!--<FrameLayout
+            android:background="@drawable/btnborder"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            >
+
+            <ImageButton
+                android:id="@+id/imgmywork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="@dimen/padding_30"
+                android:background="@drawable/mywork" />
+
+            <ImageView
+                android:id="@+id/imgRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="@dimen/padding_30"
+                android:src="@drawable/rate" />
+
+            <ImageView
+                android:id="@+id/imgMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginBottom="@dimen/padding_30"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/free" />
+
+            <ImageView
+                android:id="@+id/imgShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="@dimen/padding_30"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/groupshare" />
+
+            <ImageView
+                android:id="@+id/imgGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/start" />
+        </FrameLayout>
+
+-->
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="2">
+
+                    <ImageButton
+                        android:id="@+id/imgmywork"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btnborder"
+                        android:src="@drawable/mywork" />
+
+                    <ImageButton
+                        android:id="@+id/imgRate"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btnborder"
+                        android:src="@drawable/rate" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="2">
+
+                    <ImageButton
+                        android:id="@+id/imgMore"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btnborder"
+                        android:src="@drawable/free" />
+
+                    <ImageButton
+                        android:id="@+id/imgShare"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btnborder"
+                        android:src="@drawable/groupshare" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--    <ImageButton
+                    android:id="@+id/imgmywork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|top"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="@dimen/padding_30"
+                    android:background="@drawable/mywork" />
+
+                <ImageView
+                    android:id="@+id/imgRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="@dimen/padding_30"
+                    android:src="@drawable/rate" />
+
+                <ImageView
+                    android:id="@+id/imgMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginBottom="@dimen/padding_30"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/free" />
+
+                <ImageView
+                    android:id="@+id/imgShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginBottom="@dimen/padding_30"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/groupshare" />-->
+
+            <ImageView
+                android:id="@+id/imgGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/start" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnfooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:text="Birthday Photo Frame"
+            android:textAllCaps="false"
+            android:textSize="25dp"
+            android:visibility="visible" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/ad_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id" />
+    </RelativeLayout>
+</LinearLayout>
+

@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">New Year 2017 Photo Frame</string>
+    <!--Gogole Admob-->
+
+         <!--official test ids-->
+
+            <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+            <string name="full_screen_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+            <string name="full_screen_ad_unit_id_save">ca-app-pub-3940256099942544/1033173712</string>
+    </resources>
+
